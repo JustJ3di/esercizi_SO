@@ -3,10 +3,13 @@ Produttore/consumatore con vettore di stato, con monitor
 Si realizzi in linguaggio C/C++ un'applicazione multiprocesso per la simulazione di un magazzino per lo stoccaggio di merci. L'applicazione è costituita da 20 processi, 10 fornitori e 10 clienti. 
 Il magazzino è rappresentato da un vettore di 100 elementi, ognuno contenente la seguente struttura scaffale:
 
-typedef struct {
-    unsigned int id_fornitore;
-    unsigned int stato; 
-} scaffale;
+    typedef struct {
+
+        unsigned int id_fornitore;
+    
+        unsigned int stato; 
+
+    } scaffale;
 
 dove id_fornitore è il PID dell'ultimo fornitore che ha usato lo scaffale (inizialmente 0), e stato indica se lo scaffale è libero (0), occupato (1), o in uso (2), ovvero correntemente usato da un fornitore o cliente. Una variabile globale livello_scorte indica il numero di prodotti presenti nel magazzino (livello max: 100 prodotti, inizialmente 0).
 
