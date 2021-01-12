@@ -1,3 +1,5 @@
+(PROVA D'ESAME DEL 21/02/2014)
+
 Lettori/scrittori su più oggetti monitor
 
 Si realizzi in linguaggio C o C++ un programma multi-thread (con la libreria PThreads) che simuli il monitoraggio di traffico ferroviario. Il programma dovrà essere basato sul costrutto Monitor.
