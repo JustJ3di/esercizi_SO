@@ -2,15 +2,15 @@ Lettori/scrittori con priorità
 
 Si realizzi in linguaggio C/C++ un'applicazione multiprocesso, basata su costrutto monitor, che implementi la variante dello schema dei lettori-scrittori descritta di seguito. Il monitor dovrà fornire le seguenti procedure:
 
-  typedef struct {
-      int buffer;     // risorsa condivisa
-      // ... aggiungere altre variabili per la sincronizzazione ...
-  } MonitorLS;
+    typedef struct {
+        int buffer;     // risorsa condivisa
+        // ... aggiungere altre variabili per la sincronizzazione ...
+    } MonitorLS;
 
-  void inizializza(MonitorLS * m);
-  int lettore(MonitorLS * m);
-  void scrittore_lento(MonitorLS * m, int valore);
-  void scrittore_veloce(MonitorLS * m, int valore);
+    void inizializza(MonitorLS * m);
+    int lettore(MonitorLS * m);
+    void scrittore_lento(MonitorLS * m, int valore);
+    void scrittore_veloce(MonitorLS * m, int valore);
 
 La funzione lettore() dovrà ritornare in uscita il valore nel buffer, rispettando i normali vincoli dello schema lettori-scrittori (mutua esclusione con gli scrittori; più lettore possono accedere contemporaneamente). Le funzioni scrittore_lento() e scrittore_veloce() dovranno scrivere sul buffer il valore passato come parametro di ingresso, rispettando i normali vincoli dello schema lettori-scrittori (mutua esclusione con i lettori e tra gli scrittori).
 Gli scrittori veloci impiegano 1 secondo per effettuare la scrittura (da simulare usando la funzione sleep()); gli scrittori lenti impiegano 2 secondi.
