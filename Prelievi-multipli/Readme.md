@@ -8,4 +8,3 @@ I consumatori possono prelevare dal buffer se ci sono elementi disponibili; se i
 Il programma dovrà istanziare 5 processi produttori, ciascuno dei quali produrrà un elemento per 6 volte, attendendo due secondi tra una produzione e l'altra. Inoltre, si dovranno istanziare 5 processi consumatori, ciascuno dei quali preleverà due elementi dal buffer per 3 volte, attendendo un secondo tra una consumazione e l'altra; gli elementi prelevati saranno stampati a video. 
 Una volta istanziati i processi, tramite la primitiva fork(), il programma principale ne attende la terminazione e termina a sua volta.
 
-image
