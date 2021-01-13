@@ -1,4 +1,4 @@
-Load balancing
+Load balancing (esame del 18-01-2011)
 
 Si realizzi in linguaggio C/C++ un'applicazione multiprocesso basata su code di messaggi UNIX, per la simulazione di un servizio di Load Balancing.
 Un processo, denominato Balancer, attende di ricevere messaggi di richiesta di un ipotetico servizio, provenienti da un gruppo di processi Client.
