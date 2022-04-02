@@ -1,2 +1,2 @@
-# esercizi_SO
-Serie di esercizi di programmazione concorrente
+# concurrent programming exercises
+concurrent programming exercises for university
